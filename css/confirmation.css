@@ -1,0 +1,15 @@
+.box {
+    min-height: 490px;
+}
+.message {
+    margin: 50px;
+    font-size: x-large;
+}
+.quantities {
+    margin-top: 20px;
+    text-align: center;
+}
+.tickets {
+    margin-top: 20px;
+    text-align: start;
+}

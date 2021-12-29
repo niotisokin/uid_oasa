@@ -1,0 +1,22 @@
+#current-path {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#current-path a {
+    color: rgb(34, 60, 82);
+    transition: 0.15s;
+}
+
+#current-path a:hover{
+    text-decoration: none;
+    color: rgb(83, 156, 216);
+}
+
+#current-path .current-active-link {
+    color: rgb(83, 156, 216);
+}
+
+#current-path .current-active-link:hover {
+    cursor: default;
+}

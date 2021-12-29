@@ -1,0 +1,199 @@
+body {
+    overflow-y: scroll;
+}
+
+.filtra, .travelWith {
+    /* border: 1px solid; */
+    background-color: rgb(83, 156, 216);
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+#euresi_diadromis {
+    background-color: white;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(29, 116, 187);
+    color: white;
+    border-radius: 5px;
+}
+
+#anaz {
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+#switch-icon {
+    width: 25px;
+    height: 30px;
+    position: relative;
+    top: 108px;
+    left: 270px;
+}
+
+#switch-icon:hover {
+    cursor: pointer;
+}
+
+#switch-icon img {
+    width: 25px;
+    height: 30px;
+    position: relative;
+}
+
+#toggle-buttons label{
+    background-color: rgb(83, 156, 216);
+    /* border: none; */
+}
+
+#toggle-buttons .active {
+    background-color: rgb(34, 60, 82) !important;
+    /* box-shadow: none; */
+}
+
+#wheelchair_icon {
+    width: 20px;
+    height: 20px;
+    position: relative; left: 5px; bottom: 5px;
+}
+
+#route-search-icon {
+    width: 23px;
+    height: 27px;
+    margin-left: 5px;
+}
+
+#submit-button {
+    background-color: rgb(83, 156, 216);
+    border: none;
+}
+
+#submit-button:hover {
+    background-color: rgb(34, 60, 82);
+}
+
+.errormessage {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.result {
+    font-size: 25px;
+    border: solid 1px #e5e5e5;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+.arrow {
+    width: 30px;
+    height: 35px;
+}
+
+#results a:hover {
+    text-decoration: none;
+    color: rgb(83, 156, 216);
+}
+
+#results a {
+    color: rgb(65, 65, 65);
+    transition: 0.15s;
+}
+
+#results a:hover .est-time {
+    color: rgb(112, 112, 112);
+}
+
+.est-time {
+    font-size: 15px;
+    color: rgb(34, 60, 82);
+}
+
+#map span {
+    margin-right: 15px;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    max-height: 40px;
+}
+
+.bus {
+    background-color: darkslategray;
+    color: white;
+}
+
+.M1 {
+    background-color: rgb(0, 112, 0);
+    color: white;
+}
+
+.M2 {
+    background-color: rgb(216, 0, 0);
+    color: white;
+}
+
+.M3 {
+    background-color: rgb(0, 115, 209);
+    color: white;
+}
+
+.tram {
+    background-color: #a6ce39;
+    color: white;
+}
+
+.trolley {
+    background-color: #e68d12;
+    color: white;
+}
+
+.pointer-icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+
+.close {
+    position: relative;
+    top: -28px;
+    left: -5px;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    /* display: none; */
+}
+
+.close:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+/* .more-less {
+    opacity: 50%;
+    position: relative;
+    top: -28px;
+    left: 260px;
+    width: 20px;
+    height: 15px;
+    margin: 0px
+}
+
+.more-less:hover, .close:hover {
+    opacity: 100%;
+    cursor: pointer;
+} */
+
+#submit-button {
+    font-size: 20px;
+    font-weight: bold;
+}

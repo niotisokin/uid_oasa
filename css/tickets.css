@@ -1,0 +1,38 @@
+.grid-item img {
+    width: 60px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.grid-item p {
+    max-width: 250px;
+}
+
+.grid-item h4 {
+    font-size: 1.42rem;
+    max-width: 250px;
+}
+
+.grid-item .thumb {
+    width: 200px;
+    height: 155px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.grid-item .alt-image {
+    display: none;
+}
+
+.grid-item:hover .default-image {
+    display: none;
+}
+
+.grid-item:hover .alt-image {
+    display: inline;
+}

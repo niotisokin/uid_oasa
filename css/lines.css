@@ -1,0 +1,232 @@
+#main-window {
+    width: 100%;
+}
+
+#main-table {
+    margin-top: 50px;
+    margin-right: 5px;
+    height: min-content;
+    width: 33%;
+    padding: 16px;
+    background-color: rgb(29, 116, 187);
+    border-radius: 5px;
+    min-width: 300px;
+}
+
+#lines_filtra {
+    background-color: rgb(34, 60, 82);
+}
+
+#lines_map img {
+    width: 100%;
+    margin-left: 5px;
+}
+
+#main-window label {
+    color: white;
+}
+
+#wheelchair_icon {
+    width: 20px;
+    height: 20px;
+    position: relative; left: 5px; bottom: 5px;
+}
+
+#submit-button {
+    background-color: rgb(83, 156, 216);
+    border: none;
+}
+
+#submit-button:hover {
+    background-color: rgb(34, 60, 82);
+}
+
+#route-search-icon {
+    width: 16px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~ */
+
+.grid-item p {
+    max-width: 250px;
+}
+
+.grid-item h4 {
+    font-size: 1.42rem;
+    max-width: 250px;
+}
+
+.grid-item .my-image {
+    width: 200px;
+    /* height: 175px; */
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#my-index-menu {
+    margin-top: 20px !important;
+}
+
+#icons {
+    font-size: 10px;
+    font-weight: bolder;
+    color: white;
+}
+
+#icons img {
+    width: 50px;
+}
+
+#icons img:hover {
+    cursor: pointer;
+}
+
+.close {
+    position: relative;
+    top: -29px;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    /* display: none; */
+}
+
+.close:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#wres, #grammes {
+    max-height: 360px;
+    border: solid 1px #eeeeee;
+    overflow: scroll;
+    scrollbar-width: thin;
+    width: 120px;
+    align-items: center;
+    background-color: rgb(29, 116, 187);
+    color: white;
+}
+
+#wres option{
+    font-size: 18px;
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#staseis>div div {
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 250px;
+    padding-left: 20px;
+}
+
+#staseis>div div img{
+    width: 25px;
+    height: 27px;
+    margin-left: 5px;
+}
+
+#grammes>div div {
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#grammes>div div img{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+#grammes div {
+    width: 100%;
+}
+
+#grammes>div div {
+    width: 100%;
+    justify-content: center;
+}
+
+#grammes span {
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+}
+
+#staseis>div div:hover, #grammes >div div:hover {
+    cursor: pointer;
+    background-color: rgb(34, 60, 82);
+}
+
+#line-search-screen h4, #stop-search-screen h4 {
+     color:rgb(34, 60, 82);
+}
+
+#staseis {
+    max-height: 360px;
+    width: 260px;
+    border: solid 1px #eeeeee;
+    overflow: scroll;
+    scrollbar-width: thin;
+    align-items: center;
+    background-color: rgb(29, 116, 187);
+    color: white;
+}
+
+.magnifying_glass_icon {
+    position: relative;
+    top: 3px;
+    left: 5px;
+    width: 22px;
+    height: 25px;
+}
+
+.magnifying_glass_icon:hover {
+    cursor: pointer;
+}
+
+.form-group-body button {
+    visibility: hidden;
+    height: 25px;
+    padding: 0px;
+}
+
+.form-group-body button * {
+    visibility: visible;
+}
+
+.hidden {
+    display: none;
+}
+
+.shownn {
+    display: flex !important;
+}
+
+#default-screen {
+    height: 400px;
+    border-radius: 5px;
+    border: solid 1px #eeeeee;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+#line-search-screen {
+    height: 400px;
+    border: solid 1px #eeeeee;
+    border-radius: 5px;
+}
+
+#stop-search-screen {
+    height: 400px;
+    border: solid 1px #eeeeee;
+    border-radius: 5px;
+}

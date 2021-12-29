@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Υπό Κατασκευή</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="./css/header-footer.css">
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <style>
+
+            #text {
+                font-size: xx-large;
+                font-weight: bold;
+                position: absolute;
+                left: 22%;
+                top: 165px;
+            }
+
+            #button {
+                position: relative;
+                top: -100px;
+                left: 50px;
+                border-radius: 5px;
+                border: none;
+                background-color: rgb(83, 156, 216);
+                color: white;
+                padding: 10px;
+                transition: 0.2s;
+            }
+
+            #button:hover {
+                background-color: rgb(34, 60, 82);
+                text-decoration: none;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header">
+            <div class="container p-0">
+                <div class="d-flex">
+                    <div>
+                        <a href="index.html"><div class="logo">
+                            <img id="top-logo" src="./img/oasa_logo.png" >
+                        </div></a>
+                    </div>
+                    <div class="d-flex flex-column flex-fill justify-content-end">
+                    
+                        <div class="d-flex justify-content-end">
+                            
+                            <img id="my_globe_icon" src="./img/globe.png" alt="" class="mr-1">
+                            <div class="form-group ">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Ελληνικά</option>
+                                <option>English</option>
+                                <option>François</option>
+                                <option>Deutsch</option>
+                                </select>
+                            </div>
+                            
+                            
+                            <input id="my_search_bar" class="form-control ml-4 mr-1" type="text" placeholder="Αναζήτηση..." aria-label="Search">
+                            <a id="magnifying_glass_icon" href="#"><img src="./img/magnifying_glass.png" alt="" width="20px" height="20px"></a>
+                            
+                            <a class="d-flex login-trigger" href="#" data-toggle="modal" data-target="#modalLRForm" id="login-register">
+                                    <img src="./img/person_icon.png" alt="">
+                                    <span id="login-text">Σύνδεση/Εγγραφή</span>
+                            </a>
+
+                            <!-- login/register form  -->
+                            <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog cascading-modal" role="document">
+                                  <!--Content-->
+                                  <div class="modal-content">
+                              
+                                    <!--Modal cascading tabs-->
+                                    <div class="modal-c-tabs">
+                              
+                                      <!-- Nav tabs -->
+                                      <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                                        <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab">Σύνδεση</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#panel8" role="tab">Εγγραφή</a>
+                                        </li>
+                                      </ul>
+                              
+                                      <!-- Tab panels -->
+                                      <div class="tab-content">
+                                        <!--Panel 7-->
+                                        <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+                              
+                                          <!--Body-->
+                                          <div class="modal-body mb-1">
+                                            <form id="login" class="form-signin" onsubmit="return false">
+                                                <input type="text" id="login-username" class="form-control" name="username" placeholder="Όνομα Χρήστη" required=""/>
+                                                <input type="password" id="login-pw" class="form-control" name="password" placeholder="Κωδικός Πρόσβασης" required="" />
+                                                <label class="checkbox">
+                                                    <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Να με θυμάσαι
+                                                </label>
+                                                <button class="btn btn-lg btn-primary btn-block" id="login-btn" type="submit">Σύνδεση</button>
+                                            </form>
+                                          </div>
+                                          <!--Footer-->
+                                          <div class="modal-footer">
+                                            <div class="options text-center text-md-left mt-1">
+                                              <p>Δεν έχεις λογαριασμό; <a href="#" class="blue-text">Εγγραφή</a></p>
+                                              <p>Ξέχασες τον κωδικό σου; <a href="#" class="blue-text">Επανάκτηση Κωδικού</a></p>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Κλείσιμο</button>
+                                          </div>
+                              
+                                        </div>
+                                        <!--/.Panel 7-->
+                              
+                                        <!--Panel 8-->
+                                        <div class="tab-pane fade" id="panel8" role="tabpanel">
+                              
+                                          <!--Body-->
+                                          <div class="modal-body">
+                                            <form id="register" class="form-signup" onsubmit="return false">
+                                                <input type="text" class="form-control" id="username" placeholder="Όνομα Χρήστη" required=""/>
+                                                <input type="email" class="form-control" id="email" placeholder="Email" required="" />
+                                                <input type="password" class="form-control" id="password" placeholder="Κωδικός Πρόσβασης" required="" />
+                                                <input type="password" class="form-control" id="rePassword" placeholder="Επανεισάγετε τον κωδικό πρόσβασης" required="" />
+                                                <label class="checkbox">
+                                                    <input type="checkbox" value="agree" id="agree" name="agree" required="" > Συμφωνώ με τους όρους και τις προϋποθέσεις
+                                                </label>
+                                                <button class="btn btn-lg btn-primary btn-block" id="signup" type="submit">Εγγραφή</button>
+                                            </form>
+                              
+                                          </div>
+                                          <!--Footer-->
+                                          <div class="modal-footer">
+                                            <div class="options text-left">
+                                              <p class="pt-1">Έχεις λογαριασμό; <a href="#" class="blue-text">Σύνδεση</a></p>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Κλείσιμο</button>
+                                          </div>
+                                        </div>
+                                        <!--/.Panel 8-->
+                                      </div>
+                              
+                                    </div>
+                                  </div>
+                                  <!--/.Content-->
+                                </div>
+                              </div>
+                        </div>
+
+                        <!-- navigation bar -->
+                        <div id="my-navbar" class="d-flex justify-content-center m-0">
+                            <div class="navbarW3">
+                                <a href="omw.html"><img src="./img/route_icon.png" alt="">Εύρεση Διαδρομής</a>
+                                <a href="lines.html"><img src="./img/bus_icon.png" alt="">Γραμμές-Δρομολόγια</a>
+                                <a href="under_construction.html"><img src="./img/map_icon.png" alt="">Χάρτες</a>
+                                <a href="tickets.html"><img src="./img/ticket_icon.png" alt="">Εισιτήρια</a>
+                                <div class="dropdownW3">
+                                    <button class="dropbtnW3">Περισσότερα
+                                    <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-contentW3">
+                                    <a href="under_construction.html">ΑΜΕΑ-Προσβασιμότητα</a>
+                                    <a href="under_construction.html">Νέα</a>
+                                    <a href="under_construction.html">Βοήθεια-Επικοινωνία</a>
+                                    <a href="under_construction.html">Ανακάλυψε την Αθήνα</a>
+                                    <a href="under_construction.html">Συχνές Ερωτήσεις</a>
+                                    <a href="under_construction.html">Σχετικά με Εμάς</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+<div class="container">
+    <img class="mt-5" src="./img/under_construction.png" alt="" width="100%">
+
+    <span id="text">Λυπούμαστε αλλά η σελίδα που<br> ζητήσατε βρίσκεται υπό κατασκευή.</span>
+
+    <a id="button" href="index.html">Πίσω στην Αρχική Σελίδα</a>
+</div>
+
+<!-- footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row row-cols-4">
+            <div class="col">
+                <div class="footer-heading">
+                    <h4>Κατεβάστε την εφαρμογή μας</h4>
+                </div>
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 w-90 bd-highlight">
+                        <a href="https://play.google.com/store/apps/details?id=com.att.android.tfa" target="tab"><img src="./img/oasa_app_logo.jpg" alt="OASA app logo" style="width: 100px ; height: 100px ;"></a>
+                    </div>
+                    <div style="p-2 flex-shrink-1 bd-highlight">
+                        <a href="https://play.google.com/store/apps/details?id=com.att.android.tfa" target="tab" style="color: black;">
+                            <div><b>OASA Telematics</b></div>
+                            <div>Για γρήγορη πρόσβαση από το κινητό.</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="useful-links">
+                    <div class="footer-heading">
+                        <h4>Ενημέρωση Κοινού</h4>
+                    </div>
+                    <ul>
+                        <li><a href="under_construction.html"><i class="fa fa-stop"></i>Απολεσθέντα</a></li>
+                        <li><a href="under_construction.html"><i class="fa fa-stop"></i>Εκδοτήρια</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="contact-info">
+                    <div class="footer-heading">
+                        <h4>Επικοινωνία</h4>
+                    </div>
+                    <ul>
+                        <li><span>Τηλέφωνο:</span><a href="under_construction.html">210-82-00-999</a></li>
+                        <li><span>Email:</span><a href="under_construction.html">oasa@oasa.gr</a></li>
+                        <li>
+                            <div><span>Διεύθυνση:</span></div>
+                            <div><a href="#">Μετσόβου 15, Αθήνα 106 82</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="footer-heading">
+                    <h4>Social Media</h4>
+                </div>
+                <ul class="social-icons" id="social-media-icons">
+                    <li style="margin-left: 0px;"><a href="https://www.facebook.com/OASA.GR" target="tab"><i class="fa fa-facebook" style="font-size: xx-large;"></i></a></li>
+                    <li><a href="https://www.instagram.com/OASA.GR" target="tab"><i class="fa fa-instagram" style="font-size: xx-large;"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC0XdkZnOHhRLc3NE9tm4NUQ" target="tab"><i class="fa fa-youtube" style="font-size: xx-large";></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/athenspublictransportoasa/about/" target="tab"><i class="fa fa-linkedin" style="font-size: xx-large;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/signup.js"></script>
+<script src="./js/login.js"></script>
+
+</body>

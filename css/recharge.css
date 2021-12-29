@@ -1,0 +1,146 @@
+.tickets-shop {
+    border: 1px solid rgb(192, 192, 192);
+    margin: 5px;
+}
+
+.tickets-shop .lower {
+    border: 2px solid rgb(192, 192, 192);
+    color: black;
+    font-size: medium;
+    padding: 5px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.ticket-tile {
+    width: 47%;
+    height: 150px;
+    padding-top: 5px;
+}
+
+.ticket-info {
+    min-width: 75%;
+}
+
+.ticket-title {
+    margin-bottom: 10px;
+}
+
+.ticket-desc {
+    margin-bottom: 0;
+    top: 0;
+}
+
+.ticket-price {
+    font-size: large;
+}
+
+.ticket-buy {
+    top: 0;
+    margin-bottom: 20px;
+}
+
+.add-to-cart img {
+    width: 100%;
+}
+
+.cart {
+    border: 1px solid rgb(192, 192, 192);
+    margin: 5px;
+    max-width: 40%;
+}
+
+/* git */
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+    bottom: 0;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 30px auto 30px auto;
+    font-size: 1.5em;
+    bottom: 0;
+}
+
+.btn-purchase:disabled {
+    background-color: rgb(134, 134, 134);
+    border-color: rgb(134, 134, 134);
+}
